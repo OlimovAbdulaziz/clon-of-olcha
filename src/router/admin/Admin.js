@@ -12,7 +12,7 @@ function Admin() {
 
     const handleLogout = () => {
         localStorage.clear()
-        navigate("/login")
+        navigate("/")
         toast.warn("Hisobdan chiqildi")
     }
     return (
