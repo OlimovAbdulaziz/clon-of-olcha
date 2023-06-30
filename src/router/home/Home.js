@@ -1,14 +1,12 @@
 import React from 'react'
 import './Home.css'
-import Slider from '../../components/slider/Slider'
+import Swiper from '../../components/swiper/Swiper'
 import Products from '../../components/products/Products'
-import Swipe from '../../components/carousel/Carousel'
 
 function Home() {
   return (
     <div className='home'>
-        <Slider />
-        {/* <Swipe /> */}
+        <Swiper />
         <Products />
     </div>
   )
