@@ -7,14 +7,14 @@ function CartWrapper({ data }) {
     const dispatch = useDispatch()
     
     const [name, setName] = useState("")
-    const [number, setNumber] = useState("")
+    const [phone, setPhone] = useState("")
     const handleClick = (e) => {
         e.preventDefault()
 
         const chat__id = 1286705813
         const token = "6359009407:AAH-O-jHEhemsWY35EF0E4zYrosKltguSLQ"
 
-        let my__text = ` Ism: ${name} %0A Telefon raqam: ${number} %0A %0A`
+        let my__text = ` Ism: ${name} %0A Telefon raqam: ${phone} %0A %0A`
 
         data?.forEach(item => {
             my__text += `Nomi: ${item.title} %0A`
@@ -30,7 +30,7 @@ function CartWrapper({ data }) {
         api.open("GET", url, true)
         api.send()
         setName('')
-        setNumber('')
+        setPhone('')
     }
     return (
         <>
@@ -94,7 +94,7 @@ function CartWrapper({ data }) {
                         </div>
                         <div className="number">
                             <h4>Telefon raqam</h4> 
-                            <input value={number} onChange={e=> setNumber(e.target.value)}  required type="number" placeholder='+998 ()' />
+                            <input value={phone} onChange={e=> setPhone(e.target.value)}  required type="number" placeholder='+998 ()' />
                         </div>
                     </form>
                 </div>
