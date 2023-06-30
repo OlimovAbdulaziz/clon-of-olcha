@@ -1,0 +1,183 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 236px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card__image {
+    overflow: hidden;
+    height: 300px;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.card__image img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.card__heart {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    padding: 6px;
+    font-size: 23px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #555;
+    cursor: pointer;
+}
+
+.card:hover .card__image img {
+    transform: scale(1.05);
+}
+
+.card__cart {
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    background-color: #008dff;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card__body {
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card__title {
+    font-size: 16px;
+}
+
+.card__rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 0;
+}
+
+
+.card__rating span {
+    font-size: 13px;
+    color: #999;
+}
+
+.card__monthly {
+    flex-grow: 1;
+}
+
+.card__monthly span {
+    display: inline-block;
+    font-size: 16px;
+    color: #555;
+}
+
+.card__price {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__price del {
+    color: #be5679;
+    font-size: 16px;
+}
+
+.card__price p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.price__cart {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.order__cart {
+    border: none;
+    width: 210px;
+    margin: auto;
+    height: 35px;
+    background-color:   #008dff;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color .4s linear;
+    position: relative;
+}
+
+
+.order__cart::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0582e7;
+    z-index: -1;
+    transition: transform .5s;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.order__cart:hover::before {
+    transform: scaleX(1);
+}
+
+
+@media screen and (max-width: 600px) {
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: auto;
+        margin: 0;
+
+    }
+
+    .order__cart {
+        width: 95%;
+    }
+
+    .card__image {
+        height: 200px;
+        margin: 0;
+    }
+}
+
