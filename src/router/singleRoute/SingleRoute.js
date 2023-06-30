@@ -46,7 +46,6 @@ function SingleRoute() {
                     </div>
                     <div className="product__btns">
                         <button className="btnOne">
-                            <AiOutlineShoppingCart />
                             Savatga qo'shish
                             </button>
                         <button className="btnTwo">Xarid qilish</button>
