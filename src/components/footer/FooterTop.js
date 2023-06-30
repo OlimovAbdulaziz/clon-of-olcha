@@ -1,7 +1,17 @@
 import React from 'react'
-
+import {useLocation} from 'react-router-dom'
 function FooterTop() {
+    const location = useLocation().pathname
+
+    if(location.includes("/admin")){
+        return <></>
+    }
+
+    if(location.includes("/login")){
+        return <></>
+    }
     return (
+
 
         <div className="footer__top">
             <div className="footer__top-wrapper">
