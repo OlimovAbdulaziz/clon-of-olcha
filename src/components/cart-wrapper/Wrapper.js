@@ -12,7 +12,7 @@ function CartWrapper({ data }) {
         e.preventDefault()
 
         const chat__id = 1286705813
-        const token = "5913694937:AAGZY_4fGjJU3uULL31u6Fi0fCC8Eprwggo"
+        const token = "6359009407:AAH-O-jHEhemsWY35EF0E4zYrosKltguSLQ"
 
         let my__text = ` Ism: ${name} %0A Telefon raqam: ${number} %0A %0A`
 
@@ -90,11 +90,11 @@ function CartWrapper({ data }) {
                     <form action="">
                         <div className="name">
                             <h4>Ismingiz</h4> 
-                            <input value={name} onChange={e=> setName(e.target.value)} type="text" />
+                            <input value={name} onChange={e=> setName(e.target.value)} required type="text" />
                         </div>
                         <div className="number">
                             <h4>Telefon raqam</h4> 
-                            <input value={number} onChange={e=> setNumber(e.target.value)}  type="number" placeholder='+998 ()' />
+                            <input value={number} onChange={e=> setNumber(e.target.value)}  required type="number" placeholder='+998 ()' />
                         </div>
                     </form>
                 </div>
