@@ -31,13 +31,15 @@
 
 
 .footer__top-wrapper .footer__icons {
-    width: 530px;
+    width: 300px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-
+.footer__icons img {
+    width: 140px;
+}
 
 
 
@@ -135,7 +137,7 @@
 @media screen and (max-width: 900px) {
     .footer__wrapper {
         flex-direction: column;
-       height: 600px;
+        height: 600px;
     }
 
     .footer__top-wrapper {
@@ -160,27 +162,22 @@
 
 
 @media screen and (max-width: 600px) {
-    
-    .footer__top-wrapper  {
+
+    .footer__top-wrapper {
         text-align: center;
-        display: flex;
         flex-direction: column;
         font-size: 12px;
+        display: flex;
     }
 
 
 
-    .icons {
-        width: 200px;
-        display: flex;
-        flex-direction: column;
+    .footer__icons {
+        width: 100px;
         margin: auto;
         gap: 20px;
+        /* display: none; */
     }
 
-    .icons img {
-        width: auto;
-        height: 30px;
-    }
-    
+
 }
