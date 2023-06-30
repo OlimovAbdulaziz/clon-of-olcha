@@ -52,7 +52,7 @@ function ProductWrapper({ data, admin }) {
                         <p className="card__title">{item.title}</p>
                         <p className="card__rating">
                             <AiFillStar style={{ color: "#008dff" }} />
-                            <span>5.0 (585 baho)</span>
+                            <span>5 (0 ta izoh)</span>
                         </p>
                         <div className="card__price">
                             <div>
