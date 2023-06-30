@@ -179,7 +179,6 @@
 
     .btnOne {
         font-size: 20px;
-        padding: 0 100px;
     }
 
     .btnTwo {
@@ -191,7 +190,7 @@
 @media screen and (max-width: 790px) {
     .btnOne {
         white-space: nowrap;
-        padding: 0 60px;
+    
     }
 
 }
@@ -199,7 +198,6 @@
 @media screen and (max-width: 570px) {
     .btnOne {
         white-space: nowrap;
-        padding: 0 50px;
     }
 }
 
@@ -207,7 +205,7 @@
 @media screen and (max-width: 530px) {
     .btnOne {
         white-space: nowrap;
-        padding: 0 30px;
+       
     }
 }
 
